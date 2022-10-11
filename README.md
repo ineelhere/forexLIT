@@ -6,6 +6,8 @@
 * For the purpose of data ingestion, cleaning and visualisation; libraries like `pandas` and `plotly` have been used.
 * Source codes are available in [GitHub](https://github.com/ineelhere/forexlit).
 * This webapp is deployed on [Streamlit Comunity Cloud](https://share.streamlit.io/).
+    * Main (production) Branch is deployed at https://ineelhere-forexlit-1--forexlit-v5tlo1.streamlitapp.com/
+    * Develop Branch (for dev exploration) is deployed at https://ineelhere-forexlit-1--forexlit-develop-hmt0sn.streamlitapp.com/
 * This webapp is also available on [dockerhub](https://hub.docker.com/r/ineelhere/forexlit) as a docker image - `ineelhere/forexlit:latest`.
 * For any queries and feedback please reach out to [Indraneel](https://www.linkedin.com/in/indraneelchakraborty/).
 
