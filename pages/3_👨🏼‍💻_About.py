@@ -1,6 +1,7 @@
 import streamlit as st
 from footer import *
 
+st.balloons()
 st.header("ForexLIT")
 
 st.markdown('''
@@ -10,7 +11,7 @@ st.markdown('''
 * For the purpose of data ingestion, cleaning and visualisation; libraries like `pandas` and `plotly` have been used.
 * Source codes are available in [GitHub](https://github.com/ineelhere/forexlit).
 * This webapp is deployed on [Streamlit Comunity Cloud](https://share.streamlit.io/).
-* For any queries and feedback please reach out to [Indraneel](https://www.linkedin.com/in/indraneelchakraborty/)
+* For any queries and feedback please reach out to [Indraneel](https://www.linkedin.com/in/indraneelchakraborty/).
 ''')
 
 footer()

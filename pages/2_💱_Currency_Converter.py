@@ -3,6 +3,7 @@ from get_exchange import *
 from get_glossary import *
 from footer import *
 
+st.snow()
 st.header("ForexLIT")
 st.info("Convert 💱 Currencies with latest exchange rates in realtime")
 

@@ -1,0 +1,26 @@
+version: 2.1
+
+orbs: 
+  python: circleci/python@2.0.3
+
+jobs:
+  build-and-publish:
+   docker:
+      - image: cimg/base:2022.10
+   steps:
+      - checkout
+      - run:
+          name: Docker Image Build
+          command: docker build -t ineelhere/fantastic-gorilla:latest .
+      - run:
+          name: Docker Login
+          command: echo $DOCKER_PASSWORD | docker login -u ineelhere --password-stdin
+      - run:
+          name: Docker Push
+          command: docker push ineelhere/fantastic-gorilla:latest
+      
+
+workflows:
+  develop:
+    jobs:
+      - build-and-publish

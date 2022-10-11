@@ -4,6 +4,7 @@ from get_latest import *
 from footer import *
 from get_glossary import *
 
+st.balloons()
 st.header("ForexLIT")
 st.info("Explore foreign & crypto exchange rates 💰 in realtime")
 
