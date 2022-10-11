@@ -17,12 +17,12 @@ def get_latest(base_currency):
     #display the data
     xcol1.dataframe(df[["Currency", "Base","Exchange Rate"]].reset_index(drop=True))
     xcol1.download_button("Press to Download", df[["Currency", "Base","Exchange Rate"]].reset_index(drop=True).to_csv().encode('utf-8'),"file.csv","text/csv",key='download-csv')
-    xcol2.success(f" 1 USD = {(df.loc[df.Currency=='USD']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
-    xcol2.success(f" 1 EUR = {(df.loc[df.Currency=='EUR']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
-    xcol2.success(f" 1 INR = {(df.loc[df.Currency=='INR']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
-    xcol2.success(f" 1 JPY = {(df.loc[df.Currency=='JPY']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
-    xcol2.success(f" 1 AUD = {(df.loc[df.Currency=='AUD']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
-    xcol2.success(f" 1 BTC = {(df.loc[df.Currency=='BTC']).reset_index(drop=True)['Exchange Rate'][0]} {base_currency}")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='USD']).reset_index(drop=True)['Exchange Rate'][0]} USD")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='EUR']).reset_index(drop=True)['Exchange Rate'][0]} EUR")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='INR']).reset_index(drop=True)['Exchange Rate'][0]} INR")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='JPY']).reset_index(drop=True)['Exchange Rate'][0]} JPY")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='AUD']).reset_index(drop=True)['Exchange Rate'][0]} AUD")
+    xcol2.success(f" 1 {base_currency} = {(df.loc[df.Currency=='BTC']).reset_index(drop=True)['Exchange Rate'][0]} BTC")
     
 
     #generate the plot

@@ -1,6 +1,7 @@
 import streamlit as st
 import random
 from get_latest import *
+from footer import *
 
 st.header("ForexLIT")
 st.info("Explore current and historical foreign exchange rates & crypto exchange rates")
@@ -10,3 +11,5 @@ base_currency = st.selectbox("Select the base currency", currency)
 
 if base_currency:
     get_latest(base_currency)
+
+footer()
