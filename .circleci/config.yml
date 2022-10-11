@@ -11,13 +11,13 @@ jobs:
       - checkout
       - run:
           name: Docker Image Build
-          command: docker build -t ineelhere/fantastic-gorilla:latest .
+          command: docker build -t ineelhere/forexlit:latest .
       - run:
           name: Docker Login
           command: echo $DOCKER_PASSWORD | docker login -u ineelhere --password-stdin
       - run:
           name: Docker Push
-          command: docker push ineelhere/fantastic-gorilla:latest
+          command: docker push ineelhere/forexlit:latest
       
 
 workflows:
