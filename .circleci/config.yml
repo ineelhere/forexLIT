@@ -9,6 +9,9 @@ jobs:
       - image: cimg/base:2022.10
    steps:
       - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+          docker_layer_caching: true
       - run:
           name: Docker Image Build
           command: docker build -t ineelhere/forexlit:latest .
