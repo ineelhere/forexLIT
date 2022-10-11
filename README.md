@@ -1,6 +1,6 @@
 # forexLIT
 
-* This is a light-weight web application that fetches realtime data for several Foreign and Crypto currency exchange ratesand allows user to find the realtime status of the same and perform currency conversions. 
+* This is a light-weight web application that provides realtime data for several Foreign and Crypto currency exchange rates and allows user to find the realtime status of the same along with the ability to perform currency conversions. 
 * The Data is fetched from the freely avaialble [ExchangeRate API](https://exchangerate.host/#/).
 * This webapp is coded with [Streamlit](https://streamlit.io/) in Python.
 * For the purpose of data ingestion, cleaning and visualisation; libraries like `pandas` and `plotly` have been used.
